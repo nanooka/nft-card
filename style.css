@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: #0D192C;
+}
+
+.container {
+    background-color: #15263F;
+    width: 302px;
+    border-radius: 15px;
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    padding: 24px;
+}
+
+.autor-info {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline;
+}
+
+h1:hover {
+    color: cyan;
+}
+
+p {
+    color: #8BACD9;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    height: 52px;
+}
+
+a {
+    color: cyan; 
+    font-family: 'Outfit', sans-serif;
+}
+
+.etherium {
+    font-weight: 600;
+}
+.etherium, .time {
+    display: inline-block;
+}
+
+.autor-name {
+    color: white;
+    cursor: pointer;
+}
+
+.time {
+    color: #8BACD9;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 115px;
+}
+
+.autor-name:hover {
+    color: cyan;
+}
+
+.main-image {
+    max-width: 100%;
+    height: 302px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 3px;
+}
+
+.main-image {
+    position: relative;
+}
+
+
+.view-image {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: none;
+} 
+
+.view-icon {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.main-image:hover .view-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.491);
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 279px;
+        height: 520px;;
+    }
+
+    .time {
+        margin-left: 90px;
+    }
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 2px;
+        width: 278px;
+    }
+    .main-image {
+        width: 278px;
+        height: 278px;
+        margin-bottom: 30px;
+    }
+}
